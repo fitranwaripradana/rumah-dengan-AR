@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rumah dengan Pintu, Jendela, dan Kamar</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Lantai -->
+      <a-box position="0 -1 0" width="10" height="0.1" depth="10" color="#333"></a-box>
+      <!-- Dinding -->
+      <a-box position="0 0 -5" width="10" height="3" depth="0.1" color="#f7bc9c"></a-box>
+      <a-box position="5 0 0" width="0.1" height="3" depth="10" color="#f7bc9c"></a-box>
+      <a-box position="-5 0 0" width="0.1" height="3" depth="10" color="#f7bc9c"></a-box>
+      <!-- Atap -->
+      <a-cone position="0 2.5 0" radius-bottom="5" height="5" color="#ebebeb"></a-cone>
+      <!-- Pintu -->
+      <a-box position="0 -0.5 -4.95" width="1.5" height="2.5" depth="0.1" color="#8b4513"></a-box>
+      <!-- Jendela -->
+      <a-plane position="-3 1 0" rotation="0 90 0" width="2" height="2" color="#b0c4de"></a-plane>
+      <!-- Kamar -->
+      <a-box position="0 0 -2.5" width="4" height="2" depth="5" color="#f5deb3"></a-box>
+      <!-- Pintu Kamar -->
+      <a-box position="0 -0.5 -3.45" width="1.5" height="2.5" depth="0.1" color="#8b4513"></a-box>
+      <!-- Jendela Kamar -->
+      <a-plane position="0 1 -2.5" rotation="0 0 0" width="2" height="2" color="#b0c4de"></a-plane>
+    </a-scene>
+  </body>
+</html>
